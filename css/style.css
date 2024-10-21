@@ -287,7 +287,7 @@ bottom: 15vh;
     margin-left: 33%;
 }
 
-@media screen and (max-width: 1040px) {
+@media screen and (max-width: 1400px) {
     .stone img{
         width: 7.5vw;
         padding: 1.5vw;
@@ -310,7 +310,7 @@ bottom: 15vh;
     }
     #rule{
         width: 22vw;
-        height: 48vh;
+        height: max-content;
         background: #004429;
         color: white;
        float: right;
@@ -389,7 +389,7 @@ bottom: 15vh;
     }
     .nxt{
         margin-left: 90%;
-        margin-top: 51%;
+        margin-top: 34%;
      
      }
 }
