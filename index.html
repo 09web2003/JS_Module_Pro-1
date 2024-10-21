@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock-Paper-Scissors</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="main">
+        <div id="container">
+            <div class="heading">
+                <h3>rock</h3>
+                <h3>paper</h3>
+                <h3>scissors</h3>
+            </div>
+            <div class="score">
+                <div class="computer">
+                    <p>computer score</p>
+                    <h2 class="computerScore">0</h2>
+                </div>
+                <div class="human">
+                    <p>your</p>
+                    <p>score</p>
+                    <h2 class="humanScore">0</h2>
+                </div>
+            </div>
+        </div>
+        <div id="hands">
+            <div class="stone" >
+                <img src="img/stone.png" alt="" onclick="choiceOne('stone')">
+            </div>
+            <div class="scissors">
+                <img src="img/scissors.png" alt="" onclick="choiceOne('scissors')">
+            </div>
+            <div class="paper">
+                <img src="img/paper.png" alt="" onclick="choiceOne('paper')">
+            </div>
+
+        </div>
+        <div class="result">
+            <div id="human">
+                <h3>you picked</h3>
+                <div class="humanimg paper ">
+                    <img class="userSelect" src="img/paper.png" alt="">
+                </div>
+            </div>
+            <div id="resulttxt">
+                <h3 class="answer">you win</h3>
+                <h3 id="pc">against pc</h3>
+                <div id="playagin">
+                    <button class="plybtn">play again</button>
+                </div>
+            </div>
+            <div id="computerpasand">
+                <h3>pc picked</h3>
+                <div class="computerpicked stone">
+                    <img class="comchoice" src="img/stone.png" alt="">
+                </div>
+            </div>
+            <div class="nxt">
+                <button class="nbt"><a href="hurray.html">next</a></button>
+            </div>
+        </div>
+        <div id="rule">
+            <h2>game rules</h2>
+            <ul>
+                <li><span>Rock beat scissors,scissors beat paper,paper beat rock.</span></li>
+                <li><span>Agree ahead of time whether you'll count off "rock,paper,scissors,shoot" or just
+                    "rock,paper,scissors."</span></li>
+                <li><span>Use rock,paper,scissors to settle minor decisions or simply play to pass the time.</span></li>
+                <li><span>If both players lay down the same hand,each players lays down another hand.</span></li>
+            </ul>
+        </div>
+        <div class="cross">
+            <h1>
+                x
+            </h1>
+        </div>
+        <div class="show">
+            <button class="btn">rules</button>
+        </div>
+    </div>
+
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>

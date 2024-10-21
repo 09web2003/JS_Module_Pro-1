@@ -1,0 +1,396 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Barlow", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+}
+
+body,html{
+    width: 100vw;
+    height: 100vh;
+}
+.main{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(99, 169, 29, 0.724);
+}
+#container{
+   border: 2px solid white;
+   width: 40vw;
+   height: 16vh;
+   color: white;
+   border-radius: 13px;
+   display: flex;
+   justify-content: space-between;
+   position: relative;
+   top: 10vh;
+    left: 30vw;
+}
+.heading{
+    text-transform: uppercase;
+    padding: 0.5vw;
+    font-size: 20px;
+    letter-spacing: 0.3vw;
+    font-weight: 600;
+    font-size: 1.5vw;
+}
+.score{
+display: flex;
+justify-content: space-between;
+width: 15vw;
+margin-right: 1vw;
+align-items: center;
+}
+.computer ,.human{
+    width: 7vw;
+    background-color: white;
+    color: black;
+    border-radius: 9px;
+    padding: 0.2vw;
+    height: 13vh;
+    text-transform: capitalize;
+}
+.computer p ,.human p{
+    color: #0303038e;
+    font-size: 1.1vw;
+    text-align: center;
+    letter-spacing: 0.1vw;
+}
+.computer h2,.human h2{
+    color: black;
+    font-size: 2.8vw;
+    text-align: center;
+    font-weight: 700;
+}
+#hands{
+    width: 30vw;
+    height: 40vh;
+    position: relative;
+    left: 35vw;
+    top: 20vh;
+    background-image: url("/img/reverse-trangle.png");
+    background-repeat: no-repeat;
+    background-size: 25vw;
+    background-position: center;
+    color: #000000A3;
+}
+.stone img{
+    width: 7.5vw;
+    padding: 1.5vw;
+    background-color: white;
+    border-radius: 50%;
+    border: 14px solid #0074B6;
+    position: absolute;
+    left: 4vw;
+}
+.scissors img{
+    width: 7vw;
+    padding: 1vw;
+    background-color: white;
+    border-radius: 50%;
+    border: 14px solid #BD00FF;
+    position: absolute;
+    left: 18vw;
+}
+.paper img{
+    width: 7vw;
+    padding: 1vw;
+    background-color: white;
+    border-radius: 50%;
+    border: 14px solid #FFA943;
+    position: absolute;
+    left: 11vw;
+    top: 23vh;
+}
+.paper img,.scissors img,.stone img:hover{
+    cursor: pointer;
+}
+#rule{
+    width: 16vw;
+    height: 43vh;
+    background: #004429;
+    color: white;
+   float: right;
+   border: 7px solid white;
+   border-radius: 13px;
+  position: fixed;
+  bottom: 13vh;
+  left: 78vw;
+  opacity: 0;
+}
+#rule h2{
+    text-align: center;
+    text-transform: capitalize;
+    padding: 1vw;
+}
+#rule ul li{
+    font-size: 12px;
+    /* padding: 0.5vw; */
+    color: yellow;
+    list-style-type: square;
+    margin-left: 1.8vw;
+    margin-bottom: 1.5vh;
+    font-size: 15px;
+    font-weight: 800;
+
+}
+#rule ul li span{
+    color: white;
+   font-size: 11px;
+   
+}
+.cross{
+    width: 4vw;
+    height: 8vh;
+    border-radius: 50%;
+    background-color: red;
+    border: 5px solid white;
+    color: white;
+    float: right;
+    position: fixed;
+    left: 92vw;
+    bottom: 50vh;
+    opacity: 0;
+    cursor: pointer;
+}
+.cross h1{
+    text-align: center;
+    font-weight: 600;
+    font-size: 40px;  
+}
+.show button{
+    width: 7vw;
+    background-color: transparent;
+    border: 2px solid white;
+    padding: 0.4vw;
+    border-radius: 8px;
+    color: white;
+    text-transform: uppercase;
+    font-size: 1vw;
+    letter-spacing: 0.2vw;
+    cursor: pointer;
+}
+.show{
+    display: flex;
+    justify-content: end;
+    align-items: end;
+    position: fixed;
+    top: 93vh;
+    left: 88vw;
+}
+.result{
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+.humanimg{
+    position: fixed;
+    left: 25vw;
+    top: 25vh;
+}
+.computerpicked{
+    position: fixed;
+    left: 55vw;
+    top: 48vh;
+}
+#human h3{
+    color: white;
+    position: fixed;
+    top: 40vh;
+    right: 58vw;
+    text-transform: uppercase;
+    font-size: 15px;
+    word-spacing: 0.3vw;
+}
+#computerpasand h3{
+    color: white;
+    position: fixed;
+     top: 40vh;
+    right: 35vw;
+    text-transform: uppercase;
+    font-size: 15px;
+    word-spacing: 0.3vw;
+}
+#resulttxt{
+    position: fixed;
+    top: 48vh;
+    margin-left: 47%;
+}
+#resulttxt h3{
+    color: white;
+    font-size: 25px;
+    text-transform: uppercase;
+    letter-spacing: 0.2vw;
+    text-align: center;
+}
+#playagin button{
+    margin-top: 3vh;
+    padding: 0.5vw 1.3vw;
+    border-radius: 7px;
+    border: none;
+   text-transform: uppercase;
+   letter-spacing: 0.1vw;
+}
+ #pc{
+    font-size: 13px !important
+}
+.nxt{
+   margin-left: 90%;
+   margin-top: 37%;
+
+}
+.nbt{
+    width: 7vw;
+    background-color: transparent;
+    border: 2px solid white;
+    padding: 0.4vw;
+    border-radius: 8px;
+    color: white;
+    text-transform: uppercase;
+    font-size: 1vw;
+    letter-spacing: 0.2vw;
+    cursor: pointer;
+}
+.nbt a{
+    text-decoration: none;
+    color: white;
+}
+.tro{
+    margin-left: 32%;
+}
+.hrry{
+    font-size: 4rem;
+    color: white;
+    letter-spacing: 0.2vw;
+    text-transform: uppercase;
+    text-align: center; 
+}
+.game{
+width: 30rem;
+height: 10rem;
+margin-left: 32rem;
+position: relative;
+bottom: 15vh;
+}
+.hrs{
+    font-size: 1.8rem;
+    color: white;
+    letter-spacing: 0.2vw;
+    text-transform: uppercase;
+    text-align: center; 
+    margin-bottom: 10%;
+}
+.hrplay{
+    margin-left: 33%;
+}
+
+@media screen and (max-width: 1040px) {
+    .stone img{
+        width: 7.5vw;
+        padding: 1.5vw;
+        background-color: white;
+        border-radius: 50%;
+        border: 14px solid #0074B6;
+        position: absolute;
+        left: 4vw;
+        top: 4vh;
+    }
+    .scissors img{
+        width: 7vw;
+        padding: 1vw;
+        background-color: white;
+        border-radius: 50%;
+        border: 14px solid #BD00FF;
+        position: absolute;
+        left: 18vw;
+        top: 4vh;
+    }
+    #rule{
+        width: 22vw;
+        height: 48vh;
+        background: #004429;
+        color: white;
+       float: right;
+       border: 7px solid white;
+       border-radius: 13px;
+      position: fixed;
+      bottom: 13vh;
+      left: 75vw;
+      opacity: 0;
+    }
+    #rule h2{
+        text-align: center;
+        text-transform: capitalize;
+        padding: 1vw;
+    }
+    #rule ul li{
+        font-size: 8px;
+        /* padding: 0.5vw; */
+        color: yellow;
+        list-style-type: square;
+        margin-left: 2.5vw;
+        margin-bottom: 1.5vh;
+        font-size: 15px;
+        font-weight: 800;
+    
+    }
+    .cross{
+        width: 6vw;
+        height: 8vh;
+        border-radius: 50%;
+        background-color: red;
+        border: 5px solid white;
+        color: white;
+        float: right;
+        position: fixed;
+        left: 92vw;
+        bottom: 57vh;
+        opacity: 0;
+        cursor: pointer;
+    }
+    .cross h1{
+        text-align: center;
+        font-weight: 600;
+        font-size: 30px;  
+    }
+    .humanimg{
+        position: fixed;
+        left: 23vw;
+        top: 22vh;
+    }
+    .computerpicked{
+        position: fixed;
+        left: 60vw;
+        top: 42vh;
+    }
+    #computerpasand h3{
+        color: white;
+        position: fixed;
+         top: 40vh;
+        right: 28vw;
+        text-transform: uppercase;
+        font-size: 15px;
+        word-spacing: 0.3vw;
+    }
+    #resulttxt{
+        position: fixed;
+        top: 44vh;
+        margin-left: 47%;
+    }
+    #resulttxt h3{
+        color: white;
+        font-size: 22px;
+        text-transform: uppercase;
+        letter-spacing: 0.2vw;
+        text-align: center;
+    }
+    .nxt{
+        margin-left: 90%;
+        margin-top: 51%;
+     
+     }
+}
