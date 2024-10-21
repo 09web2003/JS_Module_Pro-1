@@ -296,7 +296,6 @@ bottom: 15vh;
         border: 14px solid #0074B6;
         position: absolute;
         left: 4vw;
-        top: 4vh;
     }
     .scissors img{
         width: 7vw;
@@ -306,10 +305,9 @@ bottom: 15vh;
         border: 14px solid #BD00FF;
         position: absolute;
         left: 18vw;
-        top: 4vh;
     }
     #rule{
-        width: 22vw;
+        width: 17vw;
         height: max-content;
         background: #004429;
         color: white;
@@ -318,7 +316,7 @@ bottom: 15vh;
        border-radius: 13px;
       position: fixed;
       bottom: 13vh;
-      left: 75vw;
+      left: 80vw;
       opacity: 0;
     }
     #rule h2{
@@ -335,10 +333,9 @@ bottom: 15vh;
         margin-bottom: 1.5vh;
         font-size: 15px;
         font-weight: 800;
-    
     }
     .cross{
-        width: 6vw;
+        width: 4vw;
         height: 8vh;
         border-radius: 50%;
         background-color: red;
@@ -346,7 +343,7 @@ bottom: 15vh;
         color: white;
         float: right;
         position: fixed;
-        left: 92vw;
+        left: 95vw;
         bottom: 57vh;
         opacity: 0;
         cursor: pointer;
@@ -363,14 +360,14 @@ bottom: 15vh;
     }
     .computerpicked{
         position: fixed;
-        left: 60vw;
-        top: 42vh;
+        left: 55vw;
+        top: 45vh;
     }
     #computerpasand h3{
         color: white;
         position: fixed;
          top: 40vh;
-        right: 28vw;
+        right: 34vw;
         text-transform: uppercase;
         font-size: 15px;
         word-spacing: 0.3vw;
@@ -389,7 +386,32 @@ bottom: 15vh;
     }
     .nxt{
         margin-left: 90%;
-        margin-top: 34%;
-     
+        margin-top: 33%;
      }
+     #container{
+        border: 2px solid white;
+        width: 40vw;
+        height: 18vh;
+        color: white;
+        border-radius: 13px;
+        display: flex;
+        justify-content: space-between;
+        position: relative;
+        top: 10vh;
+         left: 30vw;
+     }
+     .computer ,.human{
+        width: 7vw;
+        background-color: white;
+        color: black;
+        border-radius: 9px;
+        padding: 0.2vw;
+        height: 15vh;
+        text-transform: capitalize;
+    }
+    .hrplay{
+        margin-left: 12%;
+        position: fixed;
+        bottom: 5vh;
+    }
 }
