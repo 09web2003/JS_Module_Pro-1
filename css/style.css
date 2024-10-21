@@ -68,12 +68,14 @@ align-items: center;
 }
 #hands{
     width: 30vw;
-    height: 50vh;
-    margin-top: 16vh;
-    margin-left: 40vw;
-}
-.trangle img{
-width: 25vw;
+    height: 40vh;
+    position: fixed;
+    left: 35vw;
+    top: 35vh;
+    background-image: url("/img/reverse-trangle.png");
+    background-repeat: no-repeat;
+    background-size: 25vw;
+    background-position: center;
 }
 .stone img{
     width: 7.5vw;
@@ -81,9 +83,8 @@ width: 25vw;
     background-color: white;
     border-radius: 50%;
     border: 14px solid #0074B6;
-    position: fixed;
-    left: 43vw;
-    top: 38vh;
+    position: absolute;
+    left: 4vw;
 }
 .scissors img{
     width: 7vw;
@@ -92,8 +93,7 @@ width: 25vw;
     border-radius: 50%;
     border: 14px solid #BD00FF;
     position: absolute;
-    left: 49vw;
-    top: 59vh;
+    left: 18vw;
 }
 .paper img{
     width: 7vw;
@@ -102,8 +102,8 @@ width: 25vw;
     border-radius: 50%;
     border: 14px solid #FFA943;
     position: absolute;
-    left: 56vw;
-    top: 37vh;
+    left: 12vw;
+    top: 23vh;
 }
 .paper img,.scissors img,.stone img:hover{
     cursor: pointer;
