@@ -69,15 +69,13 @@ align-items: center;
 #hands{
     width: 30vw;
     height: 40vh;
-    position: relative;
+    position: fixed;
     left: 35vw;
-    top: 20vh;
+    top: 35vh;
     background-image: url("/img/reverse-trangle.png");
     background-repeat: no-repeat;
     background-size: 25vw;
     background-position: center;
-    color: #000000A3;
-    z-index: 99999999999;
 }
 .stone img{
     width: 7.5vw;
@@ -104,7 +102,7 @@ align-items: center;
     border-radius: 50%;
     border: 14px solid #FFA943;
     position: absolute;
-    left: 11vw;
+    left: 12vw;
     top: 23vh;
 }
 .paper img,.scissors img,.stone img:hover{
